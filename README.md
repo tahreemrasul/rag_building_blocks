@@ -18,7 +18,7 @@ This project demonstrates how to build a Retrieval-Augmented Generation (RAG) pi
 1. **Clone the Repository**:
    ```bash
    git clone git@github.com:tahreemrasul/rag_building_blocks.git
-   cd rag_building_blocks```
+   cd rag_building_blocks
 2. **Install Dependencies**:
    ```bash
    pip install -r requirements.txt
