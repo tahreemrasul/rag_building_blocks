@@ -1,6 +1,6 @@
 import os
 from langchain_groq import ChatGroq
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
@@ -21,12 +21,9 @@ def get_loader(filename):
     return loader
 
 
-filename = 'data/22-1534-2023-12-12.txt'
+filename = 'data/Responsible AI Agents With Gemma (1).pdf'
 loader = get_loader(filename)
 doc = loader.load()
-print(doc[0].page_content)
-# remove the unnecessary pages
-# doc = doc[2:46]
 
 # INDEXING
 # text split
@@ -38,7 +35,7 @@ embedding = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-l
 db = Chroma.from_documents(documents=split_docs, embedding=embedding)
 
 # Retrieval
-question = "When should I not use transfer learning?"
+question = "What are responsible AI agents?"
 print(db.similarity_search(query=question, k=1))
 
 # Generation
