@@ -25,6 +25,8 @@ This project demonstrates how to build a Retrieval-Augmented Generation (RAG) pi
    ```
 3. **Add Input File**: Place your input file (PDF) in the data/ directory.
 
+---
+
 ## File Structure
 
 ├── data/
@@ -33,10 +35,15 @@ This project demonstrates how to build a Retrieval-Augmented Generation (RAG) pi
 ├── requirements.txt         # List of dependencies
 └── README.md                # Project documentation
 
+---
+
 ## Usage
 Run the RAG pipeline with the following command:
 ```bash
 python rag_building_blocks.py
 ```
+
+---
+
 ## License
 This project is licensed under the `MIT` License. See the LICENSE file for more details.
