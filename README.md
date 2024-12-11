@@ -24,6 +24,11 @@ This project demonstrates how to build a Retrieval-Augmented Generation (RAG) pi
    pip install -r requirements.txt
    ```
 3. **Add Input File**: Place your input file (PDF) in the data/ directory.
+4. **Create .env File**: Create a .env file in your directory and add `GROQ_API_KEY` as:
+   ```bash
+   GROQ_API_KEY="your key"
+   ```
+   You can get the key at https://console.groq.com/playground
 
 ---
 
