@@ -1,0 +1,7 @@
+langchain
+langchain-community
+langchain-groq
+pypdf
+chromadb
+sentence-transformers==2.2.2
+python-dotenv==1.0.0
